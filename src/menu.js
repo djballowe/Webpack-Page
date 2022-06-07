@@ -6,7 +6,7 @@ function makeMenu() {
     const elementFactory = (type, attributes, text) => {
         const create = document.createElement(type);
         create.textContent = text;
-        for (key in attributes) {
+        for (let key in attributes) {
             create.setAttribute(key, attributes[key]);
         }
         return create;
@@ -22,4 +22,4 @@ function makeMenu() {
     container.appendChild(myMenu);
 }
 
-module.export = makeMenu();
+export { makeMenu };
