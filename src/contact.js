@@ -13,9 +13,9 @@ function makeContact() {
     content.appendChild(elementFactory('div', {id: 'contact'}));
     
     const container = document.querySelector('#contact');
-    container.appendChild(elementFactory('div', {class: 'content-container'}));
+    container.appendChild(elementFactory('div', {class: 'contact-container'}));
 
-    const contentContainer = document.querySelector('.content-container');
+    const contentContainer = document.querySelector('.contact-container');
     contentContainer.appendChild(elementFactory('div', {class: 'info'}));
     
     const info = document.querySelector('.info');
@@ -26,18 +26,18 @@ function makeContact() {
     info.appendChild(elementFactory('p',{class: 'contact'}, 'Write us a question!'));
     info.appendChild(elementFactory('p',{class: 'contact'}, 'theamericanplace@america.com'));
 
-    container.appendChild(elementFactory('div', {class: 'hours'}));
+    contentContainer.appendChild(elementFactory('div', {class: 'hours'}));
 
     const hours = document.querySelector('.hours');
 
-    hours.appendChild(elementFactory('h1', {class: 'hours'}, 'Hours'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Monday 7-10AM, 3-9PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Tuesday 7-10AM, 3-9PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Wednesday 7-10AM, 3-9PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Thursday 7-10AM, 3-9PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Friday 7AM, 10PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Saturday 7AM, 10PM'));
-    hours.appendChild(elementFactory('p', {class: 'hours'}, 'Sunday 7AM, 9PM'));
+    hours.appendChild(elementFactory('h1', {class: 'hour'}, 'Hours'));
+    hours.appendChild(elementFactory('p', {class: 'monday'}, 'Monday 7-10AM, 3-9PM'));
+    hours.appendChild(elementFactory('p', {class: 'tuesday'}, 'Tuesday 7-10AM, 3-9PM'));
+    hours.appendChild(elementFactory('p', {class: 'wednesday'}, 'Wednesday 7-10AM, 3-9PM'));
+    hours.appendChild(elementFactory('p', {class: 'thursday'}, 'Thursday 7-10AM, 3-9PM'));
+    hours.appendChild(elementFactory('p', {class: 'friday'}, 'Friday 7AM, 10PM'));
+    hours.appendChild(elementFactory('p', {class: 'saturday'}, 'Saturday 7AM, 10PM'));
+    hours.appendChild(elementFactory('p', {class: 'sunday'}, 'Sunday 7AM, 9PM'));
 
     container.appendChild(elementFactory('div', {class: 'reserve'}));
 
