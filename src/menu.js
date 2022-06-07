@@ -15,7 +15,11 @@ function makeMenu() {
     
     content.appendChild(elementFactory('div', {id: 'menu'}));
 
-    const container = document.querySelector('#menu');
+    const menib = document.querySelector('#menu');
+
+    menib.appendChild(elementFactory('div', {class: 'img'}));
+
+    const container = document.querySelector('.img');
     const myMenu = new Image();
     myMenu.src = menu;
 

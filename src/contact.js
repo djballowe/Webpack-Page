@@ -1,5 +1,5 @@
 function makeContact() {
-    const content = document.getElementById('#content');
+    const content = document.querySelector('#content');
 
     const elementFactory = (type, attributes, text) => {
         const create = document.createElement(type);
@@ -10,13 +10,15 @@ function makeContact() {
         return create;
     }
 
-    content.appendChild(elementFactory('div', {class: 'contact-container'}));
+    content.appendChild(elementFactory('div', {id: 'contact'}));
     
-    const container = document.querySelector('#container');
-    container.appendChild(elementFactory('div', {class: 'info', id: 'info'}))
+    const container = document.querySelector('#contact');
+    container.appendChild(elementFactory('div', {class: 'content-container'}));
 
+    const contentContainer = document.querySelector('.content-container');
+    contentContainer.appendChild(elementFactory('div', {class: 'info'}));
     
-    const info = document.querySelector('#info');
+    const info = document.querySelector('.info');
 
     info.appendChild(elementFactory('h1',{class: 'contact'}, 'Contact'));
     info.appendChild(elementFactory('p',{class: 'contact'}, '54321 Countdown Road'));
@@ -67,3 +69,5 @@ function makeContact() {
     email.appendChild(elementFactory('label', {id: 'label'}, 'Email'));
     email.appendChild(elementFactory('input'));
 }
+
+export { makeContact };
