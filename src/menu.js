@@ -1,3 +1,5 @@
+import menu from './menu.png';
+
 function makeMenu() {
     const content = document.querySelector('#content');
 
@@ -11,8 +13,13 @@ function makeMenu() {
     }
 
     
-    content.appendChild(elementFactory('div', {id: 'menu'}););
+    content.appendChild(elementFactory('div', {id: 'menu'}));
 
+    const container = document.querySelector('#menu');
+    const myMenu = new Image();
+    myMenu.src = menu;
 
-
+    container.appendChild(myMenu);
 }
+
+module.export = makeMenu();

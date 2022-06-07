@@ -1,6 +1,4 @@
-
-
-function makeHome() {
+export default function makeHome() {
     const content = document.querySelector('#content');
 
     const elementFactory = (type, attributes, text) => {
@@ -25,5 +23,6 @@ function makeHome() {
     text.appendChild(elementFactory('button', {class: 'button'}, 'Get Started'));
 }
 
-module.export = makeHome();
+
+
 

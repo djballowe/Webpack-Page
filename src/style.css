@@ -63,7 +63,7 @@ header {
 /* Home Page */
 
 #homepage {
-    display: none;
+    display: block;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
