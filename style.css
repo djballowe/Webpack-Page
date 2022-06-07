@@ -1,0 +1,209 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main CSS */
+
+body {
+    background-image: url(./background-image.jpg);
+    background-size: 112%;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Home Page */
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.logo {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 70px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.logo p {
+    font-size: 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    margin-right: 20px;
+}
+
+li {
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+#background {
+    color: white;
+    font-size: 2rem;
+}
+
+#background button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border: solid 1px white;
+    padding: 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#background button:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    cursor: pointer;
+}
+
+/* Menu */
+
+#menu {
+    display: none;
+    margin-inline: auto;
+    width: min(90%, 80rem);
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact */
+
+#contact {
+    display: none;
+    margin-inline: auto;
+    width: min(90%, 80rem);
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 50px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.info h1, p {
+    padding: 10px 0;
+}
+
+form {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 12rem);
+    grid-template-rows: repeat(3, min-content);
+}
+
+.reserve input {
+    background-color: transparent;
+    border: solid 1px white;
+    width: 100px;
+}
+
+.reserve {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.reverse h1 {
+    margin: 20px 0;
+}
+
+.guests {
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+}
