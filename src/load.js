@@ -1,10 +1,10 @@
-export default function makeHome() {
+const makeHome = () =>  {
     const content = document.querySelector('#content');
 
     const elementFactory = (type, attributes, text) => {
         const create = document.createElement(type);
         create.textContent = text;
-        for (key in attributes) {
+        for (let key in attributes) {
             create.setAttribute(key, attributes[key]);
         }
         return create;
@@ -23,6 +23,6 @@ export default function makeHome() {
     text.appendChild(elementFactory('button', {class: 'button'}, 'Get Started'));
 }
 
-
+export { makeHome };
 
 
